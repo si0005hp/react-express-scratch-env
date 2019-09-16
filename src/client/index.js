@@ -1,12 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Hello } from './hello'
 
 fetch('/api/').then(response => {
   console.log(response.json());
 })
 
-export const Index = () => {
-  return <div>Hello React!</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Hello />, document.getElementById('index'));
