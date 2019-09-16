@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Index = () => {
+fetch('/api/').then(response => {
+  console.log(response.json());
+})
+
+export const Index = () => {
   return <div>Hello React!</div>;
 };
 
